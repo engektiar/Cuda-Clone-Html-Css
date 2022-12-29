@@ -1,0 +1,489 @@
+/*=============*/
+/* =====Basick Setup=== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3;
+    font-size: 1.6rem;
+}
+ul li{
+    list-style-type:none;}
+
+    /* ====Heading==== */
+    h1{
+        font-size: 4.2rem;
+        color: #fff;
+    }
+     
+
+/*======*/
+/* Reusable Component*/
+/*=======================*/
+.row{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+section{
+    padding: 2rem 0;
+    
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+h2{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #fff;
+    
+     
+}
+h2::after{
+    content: "";
+    display: block;
+    height: .4rem;
+    background: #fff;
+    width: 8.5rem;
+    color: #fff;
+    margin: auto;
+    margin-top: 2rem;
+    
+}
+h3{
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+h4{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 2.5rem;
+}
+.box{
+padding: 1%;
+}
+.box p{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+
+/* Bautton*/
+.btn:link,
+.btn:visited,
+.btn{
+    background: #333;
+    border-bottom: .3rem solid #0000;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem  6rem;
+    border-radius: .3rem;
+    display: inline-block;
+    margin-top: 4.5rem; 
+    font-size: 1.6rem;
+}
+/*letter-decription p tag*/
+.letter-decription{
+    font-size: 1.8rem;
+    width: 60%;
+     margin-left: 20%;
+     line-height:3rem;
+}
+/*=======================*/
+/*Header secliction*/
+/*=======================*/
+header{
+    background:linear-gradient(rgb(135, 80, 156, 0.9),rgb(135, 80, 156, 0.9)),url(img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 85vh;
+    position:relative;
+    background-attachment: fixed;
+    
+}
+.logo{
+    height: 3.5ram;
+    width: auto;
+    margin-top: 3.5rem;
+    float:left;
+    
+}
+
+/*Maine Navgation*/
+.main-nav{
+    float: right;
+    margin-top: 4.0rem;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left:1.0rem;
+
+}
+.main-nav li:first-child{
+    margin-left: 0;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background:rgb(100, 58, 121, 0);
+   padding: .6rem 1.0rem;
+   border-radius: .3rem;
+   display: inline-block;
+   font-size: 1.6rem;
+   transition:.3s;
+}
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+    background:rgb(100, 58, 121, 1);
+   
+
+}
+.main-nav li.active a{
+    background:rgb(100, 58, 121, 1);
+    
+}
+/*Text box */
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+
+/* button lust part*/
+.btn-hero:link,
+.btn-hero:visited{
+    background: #eb7b4b;
+    border-color: #c86a40;
+}
+/*SERVERS SCETION*/
+
+.service-section{
+    color: #fff;
+    text-align: center;
+    background:linear-gradient(rgb(23, 194, 164, 0.9),rgb(23, 194, 164, 0.9)),url(img/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 85vh;
+    
+    
+
+}
+.service-section h2::after{
+    background:#14a58c;
+}
+/*4imgs ervice-icon*/
+.service-icon{
+    height: 12rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+}
+/*TEAM SECTION SCETION  */
+.team-section{
+    text-align: center;
+    background:linear-gradient(rgb(231, 241, 248, 0.8),rgb(231, 241, 248,0.8)), url(img/team-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    
+}
+.team-section h2{
+    color: #3c4761;
+}
+.team-section h2::after{
+    background:#c8d9e5;
+}
+.team-member{
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.team-section h3{
+    color: #27283d;
+    font-size: 2.4rem;
+}
+.role{
+    color: #30bae7;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-top:.5rem;
+
+}
+.team-section .box p{
+    color:#3c4761;
+}
+.social-link{
+    margin-top: 4.5rem;
+    display: inline-block;
+}
+.social-link ul li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+.social-link ul li a{
+    color: #fff;
+}
+.social-link ul li a:link i::before{
+    background: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 2rem;
+    padding:1rem;
+    transition:.5s;
+}
+.social-link ul li a:hover i::before{
+    background: #393939;
+    transform: rotate(360deg);
+}
+/*skill SECTION   */
+.skill-section{
+    text-align: center;
+    background:linear-gradient(rgb(255, 255, 255 ,0.7),rgb(255, 255, 255 ,0.7)),url(img/skill-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+.skill-section h2,
+.skill-section h3{
+    color: #3c4761;
+}
+
+ .skill-section h2::after{
+     background: #3c4761;
+ }
+ .skill-section .box{
+     margin-top: 4.5rem;
+ }
+ /* round gol*/
+ svg.radial-progress circle{
+     stroke-width:5;
+ }
+ svg.radial-progress text{
+     fill:#3c4761;
+     font-size:1.5rem;
+ }
+ svg.Web-deisign circle{
+     stroke:#30bae7;
+ }
+ svg.html-css circle{
+    stroke:#d74680;
+}
+svg.graphic-deisign circle{
+    stroke:#15c7a8;
+}
+svg.ui-ux circle{
+    stroke:#eb7d4b;
+}
+/*PROTFILLO SCETION  */
+.portfoilo-section{
+     background:linear-gradient(rgb(255, 221, 153, 0.8),rgb(255, 221, 153,0.8)),url(img/portfolio-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     background-attachment: fixed;
+     text-align:center;
+}
+.portfoilo-section h2{
+    color: #3c4761;
+}
+.portfoilo-section h2::after{
+    background:#e5c37f;
+}
+.portfoilo-filter{
+    margin: 4.5rem;
+}
+.protfoilo-filter button{
+    background: #ebc985;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border: 0;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    color: #3c4761;
+    margin: 0.5em;
+    transition: .5s;
+}
+.protfoilo-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 .3rem .5rem  rgb(60, 71, 97, 0.5);
+}
+.protfoilo-img{
+    width: 100%;
+    height: 30rem;
+
+}
+.portfoilo-section .col:nth-child(3){
+    margin-left: 0;
+}
+.btn-load-more{
+   background: #17c2a4; 
+   border-color: #14a58c;
+   
+}
+.btn-load-more a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+}
+/*testmonial SCETION  */
+.testmonial{
+    background:linear-gradient(rgb(215, 70, 128 ,0.7),rgb(215, 70, 128 ,0.7)), url(img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+     background-attachment: fixed;
+     text-align:center;
+}
+ 
+ 
+.testmonial .letter-decription{
+    text-align: center;
+}
+.testmonial p{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.testmonial .col:nth-child(3){
+    margin: 0;
+}
+.testmonial .col:nth-child(1)
+.testmonial .col:nth-child(2){
+    margin-top: 4rem;
+}
+.testmonial .col:nth-child(3)
+.testmonial .col:nth-child(4){
+    margin-top: 8rem;
+}
+.clint-photo{
+    width: 10rem;
+    float: left;
+}
+.clint-photo img{
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.clint-review{
+    width: 35rem;
+    float: left;
+    text-align: justify;
+}
+.clint-review p{
+    font-size: 2.1rem;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.clint-review .role{
+    color: #fcd597;
+    font-size: 1.8rem;
+}
+.clint-review  h3{
+    font-weight: 6rem;
+}
+/*Contact SCETION  */
+.contact_sectio{
+    text-align: center;
+    background:linear-gradient(rgb(60, 84, 153, 0.8),rgb(60, 84, 153 , 0.8)),url(img/contact-bg.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center 20%;
+     background-attachment: fixed;
+}
+
+.contact_sectio h2::after{
+    background: #273a71;
+}
+.contact_sectio .letter-decription{
+    color: #fff;
+    font-size: 1.8rem;
+}
+.contact_sectio form{
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+.contact_sectio input[type="text"],
+.contact_sectio input[type="email"],
+.contact_sectio textarea{
+    background: #273a71;
+    border: .1rem solid #273a71;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    margin: .5rem 0;
+}
+.contact_sectio textarea{
+    height: 20rem;
+}
+
+.contact_sectio form ::placeholder{
+    color: #fff;
+    opacity: 1;
+}
+.btn_submit{
+    border 0;
+    border-bottom: .3rem solid #010e13;
+    background: #30bae7;
+}
+.btn_submit:hover{
+    cursor: pointer;
+}
+/*FOOTER SCETION  */
+
+
+.footer_section{
+    background: #344b8e;
+    padding: 3rem;
+    text-align: center;
+    border-top: .1rem solid #ffff;
+}
+.footer_section li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.footer_section li a{
+    color:#fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2.4rem;
+    
+  
+}
+.footer_section ul li:hover a{
+    color: #30bae7;
+    
+}
